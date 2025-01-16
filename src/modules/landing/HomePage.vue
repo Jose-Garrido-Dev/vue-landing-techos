@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import TestimonialsPage from '../common/components/TestimonialsPage.vue';
+
+</script>
+
 <template>
   <div class="bg-cream">
     <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-start w-full mt-14">
@@ -16,7 +21,7 @@
           data-aos="fade-down"
           data-aos-once="true"
           data-aos-delay="300"
-          class="hidden leading-normal text-2xl mb-8 lg:block"
+          class="hidden leading-normal text-2xl mb-8 lg:block font-bold text-white"
         >
           Profesionales en Construcción, Reparación, Mantención y Cambio de todo Tipo de Techos,
           Techumbres y Cubiertas en todo Chile.
@@ -318,7 +323,7 @@
           style="background: #33d9ef"
           class="w-5 h-5 rounded-full absolute z-0 left-36 -top-12 animate-ping"
         ></div>
-        <img class="relative z-50 floating" src="@/assets/img/section-valores.png" alt="" />
+        <img class="relative z-50 floating" src="@/assets/img/home-4.png" alt="" />
         <div
           style="background: #5b61eb"
           class="w-36 h-36 rounded-full absolute z-0 right-16 -bottom-1 animate-pulse"
@@ -400,28 +405,10 @@
     </div>
 
     <!-- TESTIMONIAL -->
-    <div class="mt-24 flex flex-col-reverse md:flex-row items-start md:space-x-10">
-      <div data-aos="zoom-in-right" class="md:w-5/12">
-        <div class="flex items-center space-x-20 mb-5">
-          <span class="border border-gray-300 w-14 absolute"></span>
-          <h1 class="text-gray-400 tracking-widest text-sm">TESTIMONIOS</h1>
-        </div>
-        <h1 class="font-semibold text-darken text-2xl lg:pr-40">Que dicen de nostros?</h1>
-        <p class="text-gray-500 my-5 lg:pr-36">
-          Tenemos una muy buena valoración acerca de los servicios que ofrecemos.
-        </p>
 
-        <router-link
-          to="/contact"
-          class="lg:mx-0 bg-yellow-500 text-white text-xl font-bold rounded-full py-4 px-9 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out"
-        >
-          Contáctanos
-        </router-link>
-      </div>
-      <div data-aos="zoom-in-left" class="md:w-7/12">
-        <img class="md:w-10/12 mx-auto" src="@/assets/img/testimonials.png" />
-      </div>
-    </div>
+    <TestimonialsPage />
+
+
   </div>
 
   <!-- trusted by -->
@@ -495,3 +482,5 @@ body {
   color: #2f327d;
 }
 </style>
+
+
