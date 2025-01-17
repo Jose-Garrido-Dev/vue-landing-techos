@@ -1,8 +1,8 @@
 <template>
     <section class="bg-white">
       <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <h1 class="font-bold text-darken my-3 text-4xl flex justify-center" style=" color: #2f327d;">
-        Algunas reseñas de <span class="text-yellow-500">nuestros clientes</span>
+        <h1 class="font-bold text-darken my-3 text-3xl sm:text-4xl flex flex-col sm:flex-row justify-center text-center sm:text-left" style=" color: #2f327d;">
+        Testimonios de <span class="text-yellow-500 ml-1"> nuestros clientes</span>
         </h1>
     
         <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
@@ -10,7 +10,7 @@
             <div class="flex items-center gap-4">
               <img
                 alt=""
-                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                :src="testimonials1"
                 class="size-14 rounded-full object-cover"
               />
     
@@ -68,14 +68,13 @@
                   </svg>
                 </div>
     
-                <p class="mt-0.5 text-lg font-medium text-gray-900">Paul Starr</p>
+                <p class="mt-0.5 text-lg font-medium text-gray-900">Restaurante El Sabor del Campo</p>
               </div>
             </div>
     
             <p class="mt-4 text-gray-700">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-              consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
-              error officiis atque voluptates magnam!
+              Nuestra remodelación incluyó un cambio completo del techo, y no podríamos estar más felices con el resultado.
+               El trabajo fue rápido y cuidadoso, respetaron nuestros tiempos y el negocio nunca se detuvo. Definitivamente recomendaríamos sus servicios.
             </p>
           </blockquote>
     
@@ -83,7 +82,7 @@
             <div class="flex items-center gap-4">
               <img
                 alt=""
-                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                :src="testimonials2"
                 class="size-14 rounded-full object-cover"
               />
     
@@ -141,14 +140,13 @@
                   </svg>
                 </div>
     
-                <p class="mt-0.5 text-lg font-medium text-gray-900">Paul Starr</p>
+                <p class="mt-0.5 text-lg font-medium text-gray-900">María Gómez, Santiago</p>
               </div>
             </div>
     
             <p class="mt-4 text-gray-700">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-              consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
-              error officiis atque voluptates magnam!
+              El equipo fue increíble desde el primer día. Cambiaron el techo de mi casa en menos tiempo del esperado y
+               quedó hermoso. Ahora mi hogar está más seguro y con un diseñ o moderno. ¡Gracias por su excelente trabajo!
             </p>
           </blockquote>
     
@@ -156,7 +154,7 @@
             <div class="flex items-center gap-4">
               <img
                 alt=""
-                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                :src="testimonials3"
                 class="size-14 rounded-full object-cover"
               />
     
@@ -214,17 +212,22 @@
                   </svg>
                 </div>
     
-                <p class="mt-0.5 text-lg font-medium text-gray-900">Paul Starr</p>
+                <p class="mt-0.5 text-lg font-medium text-gray-900">Jorge López, Valparaíso</p>
               </div>
             </div>
     
             <p class="mt-4 text-gray-700">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-              consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
-              error officiis atque voluptates magnam!
+              Decidí reparar el techo de mi casa porque tenía muchas filtraciones. La atención fue muy profesional y el 
+              resultado superó mis expectativas. Todo quedó impecable y ahora no me preocupo más por las lluvias.
             </p>
           </blockquote>
         </div>
       </div>
     </section>
   </template>
+
+  <script setup>
+    import testimonials1 from '@/assets/img/testimonials/testimonials-1.png'
+    import testimonials2 from '@/assets/img/testimonials/testimonials-2.png'
+    import testimonials3 from '@/assets/img/testimonials/testimonials-3.png'
+  </script>

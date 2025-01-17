@@ -290,7 +290,7 @@ import TestimonialsPage from '../common/components/TestimonialsPage.vue';
           style="background: #23bdee"
           class="floating w-24 h-24 absolute rounded-lg z-0 -top-3 -left-3"
         ></div>
-        <img class="rounded-xl z-40 relative" src="@/assets/img/section-video.png" alt="" />
+        <img class="rounded-xl z-40 relative" src="@/assets/img/home-video-3.jpg" alt="" />
         <a
           href="https://www.youtube.com/watch?v=r82ObkcH3v0 "
           class="bg-white w-14 h-14 rounded-full flex items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out z-50"
