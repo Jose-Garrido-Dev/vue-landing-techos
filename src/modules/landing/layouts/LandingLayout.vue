@@ -145,6 +145,9 @@
     <main class="flex-1">
       <router-view />
     </main>
+
+      <whats-app />
+
     <!-- Footer -->
     <footer class="w-full bg-gray-900 mt-20">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
