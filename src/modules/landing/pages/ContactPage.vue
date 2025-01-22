@@ -56,6 +56,8 @@
 </template>
 
 <script>
+import Swal from "sweetalert2";
+
 export default {
   methods: {
     async submitForm() {
@@ -74,14 +76,34 @@ export default {
 
         const result = await response.json();
         if (result.success) {
-          alert("¡Correo enviado con éxito!");
+          Swal.fire({
+            icon: "success",
+            title: "¡Mensaje enviado con éxito!",
+            text: "Nos pondremos en contacto contigo pronto.",
+          });
+          this.resetForm();
         } else {
-          alert("Error: " + result.message);
+          Swal.fire({
+            icon: "error",
+            title: "Error",
+            text: result.message || "Hubo un problema al enviar el correo.",
+          });
         }
       } catch (error) {
         console.error("Error en el envío:", error);
-        alert("Hubo un problema al enviar el correo.");
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: "Hubo un problema al enviar el correo.",
+        });
       }
+    },
+    resetForm() {
+      this.firstName = "";
+      this.address = "";
+      this.email = "";
+      this.phoneNumber = "";
+      this.message = "";
     },
   },
   data() {
