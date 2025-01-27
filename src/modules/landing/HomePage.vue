@@ -292,7 +292,7 @@ import TestimonialsPage from '../common/components/TestimonialsPage.vue';
         ></div>
         <img class="rounded-xl z-40 relative" src="@/assets/img/home-video-3.jpg" alt="" />
         <a
-          href="https://www.youtube.com/watch?v=r82ObkcH3v0 "
+          href="#"
           class="bg-white w-14 h-14 rounded-full flex items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out z-50"
         >
           <svg
@@ -417,12 +417,12 @@ import TestimonialsPage from '../common/components/TestimonialsPage.vue';
       Más de 100 clientes han confiado en nosotros
     </h1>
     <div class="grid grid-cols-3 lg:grid-cols-6 gap-4 justify-items-center">
-      <img class="h-7" src="@/assets/img/company/google.svg" />
-      <img class="h-7" src="@/assets/img/company/netflix.svg" />
-      <img class="h-7" src="@/assets/img/company/airbnb.svg" />
-      <img class="h-7 transform translate-y-2" src="@/assets/img/company/amazon.svg" />
-      <img class="h-7" src="@/assets/img/company/facebook.svg" />
-      <img class="h-7" src="@/assets/img/company/grab.svg" />
+      <img class="h-14" src="@/assets/img/company/eazul.png" />
+      <img class="h-14" src="@/assets/img/company/cecinas.png" />
+      <img class="h-14" src="@/assets/img/company/security.png" />
+      <img class="h-14 transform translate-y-2" src="@/assets/img/company/piscinasbyb.png" />
+      <img class="h-14" src="@/assets/img/company/srs.png" />
+      <img class="h-14" src="@/assets/img/company/terraandes.png" />
     </div>
   </div>
 </template>
